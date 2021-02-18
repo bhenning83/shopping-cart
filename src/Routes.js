@@ -13,9 +13,9 @@ function Routes() {
       <Router>
         <Nav />
         <Switch>
-          <Route path='/home' component={Home} />
-          <Route path='/shop' component={Shop} />
-          <Route path='/cart' component={Cart} />
+          <Route exact path='/' component={Home} />
+          <Route exact path='/shop' component={Shop} />
+          <Route exact path='/cart' component={Cart} />
         </Switch>
       </Router>
     </Provider>

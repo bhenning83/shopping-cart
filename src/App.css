@@ -1,14 +1,67 @@
+h1 {
+  font-size: 1.8rem;
+}
 nav {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-color: lightcyan;
   min-height: 10vh;
+  padding: 0 10px;
+  justify-content: space-between;
 }
 nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  width: 30%;
+  width: 350px;
   align-items: center;
 }
+nav ul a {
+  padding: 5px 7px;
+  background: rgb(37, 171, 255);
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 10px 3px gray;
+}
+nav ul a:visited {
+  color: white;
+}
+nav ul a:hover {
+  box-shadow: 0 0 5px 2px gray;
+  transform: translate(0, 1px);
+  transition-duration: 0.5s;
+}
+.home {
+  background-image: url('./assets/images/beans.png');
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-size: 100vw auto;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+}
+.home h1 {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgb(255, 179, 37);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 5px gray;
+}
+.home a {
+  margin: 2rem auto;
+}
+.home a button {
+  outline: none;
+  background: rgb(37, 171, 255);
+  padding: 10px 20px;
+  box-shadow: 0 0 10px 5px gray;
+  border: none;
+  color: white;
+}
+.home a button:hover {
+  box-shadow: 0 0 5px 2px gray;
+  transform: translate(0, 3px);
+  transition-duration: 0.5s;
+}
+

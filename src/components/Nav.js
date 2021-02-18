@@ -7,8 +7,9 @@ function Nav() {
 
   return (
     <nav>
+      <h1>Brandon's Coffee Roasters</h1>
       <ul>
-        <Link to='./home'>
+        <Link to='./'>
           <li>Home</li>
         </Link>
         <Link to='./shop'>
