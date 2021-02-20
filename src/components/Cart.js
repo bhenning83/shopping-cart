@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ItemsContext } from './ItemsContext'
+
 
 function Cart({ match }) {
-  console.log(match)
+  const [cartItems, setCartItems] = useContext(ItemsContext);
+  console.log(cartItems)
   return (
     <div>henlo, am cart</div>
   )

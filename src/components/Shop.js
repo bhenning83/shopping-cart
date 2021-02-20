@@ -1,19 +1,23 @@
 import React, { useContext, useEffect } from 'react';
 import {ItemsContext} from './ItemsContext'
+import {Link} from 'react-router-dom'
+import bag from '../assets/images/bag.jpeg'
+import items from './items'
 
 function Shop() {
   const [cartItems, setCartItems] = useContext(ItemsContext);
 
-  const onClickHandler = () => {
-    setCartItems(cartItems.concat('test'))
-  }
-
   useEffect(() => {
-    console.log(cartItems)
+    // console.log(cartItems)
   })
   
   return (
-    <button onClick={onClickHandler}>Testy Test</button>
+    items.map((item) => {
+      return <Link key={item.key} to={`/shop/${item.key}`} >
+        <img src={bag} alt=""/>
+        <h2>{item.title}</h2>
+      </Link>
+    })
   )
 }
 

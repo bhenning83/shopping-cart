@@ -9,13 +9,13 @@ function Nav() {
     <nav>
       <h1>Brandon's Coffee Roasters</h1>
       <ul>
-        <Link to='./'>
+        <Link to='/'>
           <li>Home</li>
         </Link>
-        <Link to='./shop'>
+        <Link to='/shop'>
           <li>Shop</li>
         </Link>
-        <Link to='./cart'>
+        <Link to='/cart'>
           <li>Cart {cartItems.length}</li>
         </Link>
       </ul>

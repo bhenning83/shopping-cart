@@ -64,4 +64,46 @@ nav ul a:hover {
   transform: translate(0, 3px);
   transition-duration: 0.5s;
 }
-
+.product-field {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 450px;
+  margin: 0 auto;
+  position: relative;
+}
+.product-field > a {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: black;
+}
+.product-field h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  text-decoration: underline;
+}
+.product-deets {
+  display: flex;
+  justify-content: space-between;
+}
+.product-deets img {
+  flex-shrink: 0;
+}
+.product-deets h5 {
+  margin-bottom: 0.5rem;
+}
+.product-deets h5:last-of-type {
+  margin-top: 2rem;
+}
+.info-box input {
+  width: 35px;
+}
+@media only screen and (max-width: 600px) {
+  .product-field {
+    width: 90%;
+  }
+  .product-deets img {
+    height: 50%;
+  }
+}
