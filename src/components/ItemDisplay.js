@@ -12,8 +12,8 @@ function ItemDisplay({ match }) {
   const [quant, setQuant] = useState(1);
   const [cartItems, setCartItems] = useContext(ItemsContext);
 
-  const idx = match.params.id;
-  const item = items.slice((idx, 1))[0];
+  let idx = match.params.id;
+  let item = items[idx];
 
   library.add(faTimes)
 
@@ -41,6 +41,7 @@ function ItemDisplay({ match }) {
           <h5>{item.desc}</h5>
           <h5>{item.roast}</h5>
           <h5>Origin: {item.origin}</h5>
+          <h5>{item.price}</h5>
           <input type="number" 
           placeholder='1'
           min='1'

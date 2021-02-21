@@ -7,17 +7,22 @@ import items from './items'
 function Shop() {
   const [cartItems, setCartItems] = useContext(ItemsContext);
 
-  useEffect(() => {
-    // console.log(cartItems)
-  })
-  
   return (
-    items.map((item) => {
-      return <Link key={item.key} to={`/shop/${item.key}`} >
-        <img src={bag} alt=""/>
-        <h2>{item.title}</h2>
-      </Link>
-    })
+    <div className='shop-wrap'>
+      {items.map((item) => {
+        return (
+          <div className='shop-display' key={item.key}>
+            <Link to={`/shop/${item.key}`}>
+              <img src={bag} alt=""/>
+              <div>
+                <h2>{item.title}</h2>
+                <h3>{item.origin}</h3>
+              </div>
+            </Link>
+          </div>
+        )
+      })}
+    </div>
   )
 }
 
