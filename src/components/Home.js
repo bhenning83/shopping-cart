@@ -5,7 +5,7 @@ function Home() {
 
   return (
     <div className='home'>
-      <h1>Taste the Mediocrity</h1>
+      <h1 className='banner'>Taste the Mediocrity</h1>
       <Link to='./shop'>
         <button>Shop Now</button>
       </Link>

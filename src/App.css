@@ -39,7 +39,7 @@ nav ul a:hover {
   display: flex;
   flex-direction: column;
 }
-.home h1 {
+.banner {
   margin-top: 1rem;
   padding: 1rem;
   background: rgb(255, 179, 37);
@@ -99,16 +99,31 @@ nav ul a:hover {
 input {
   width: 35px;
 }
+.shop-container {
+  width: 100vw;
+  display: flex;
+  min-height: 90vh;
+  justify-content: space-between;
+}
+.shop-container .beans-left {
+  min-height: 90vh;
+  background-image: url('./assets/images/beans-rotated.png');
+  background-repeat: repeat-y;
+  background-size: contain;
+  flex: 2 1 600px;
+  min-width: 100px;
+}
 .shop-wrap {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 10vw;
+  margin-right: 20px;
   justify-content: center;
+  z-index: 999;
+  flex-shrink: 2;
 }
 .shop-display {
-  width: 500px;
-  position: relative;
-  margin: 25px
+  margin: 25px;
+  flex: 1 1 500px;
 }
 .shop-display a {
   color: black;
@@ -134,11 +149,45 @@ input {
   transform: translate(0, 3px);
   transition-duration: 0.5s;
 }
+.cart-box {
+  position: relative;
+  left: 0;
+  width: 60%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.back-beans {
+  background-image: url('./assets/images/right-beans.jpg');
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-height: 600px;
+  min-width: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+/* .cart-item */
 @media only screen and (max-width: 600px) {
   .product-field {
     width: 90%;
   }
   .product-deets img {
     height: 50%;
+  }
+}
+@media only screen and (max-width: 732px) {
+  .shop-wrap {
+    justify-content: flex-start;
+  }
+  .shop-display h2:first-of-type {
+    font-size: 1.5rem;
+  }
+  .shop-display img {
+    width: 100px;
+    height: auto;
   }
 }
