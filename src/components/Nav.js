@@ -7,7 +7,7 @@ function Nav() {
 
   return (
     <nav>
-      <h1>Brandon's Coffee Roasters</h1>
+      <h1>Brandon's Beans Coffee Roasters</h1>
       <ul>
         <Link to='/'>
           <li>Home</li>

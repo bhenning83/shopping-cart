@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { ItemsContext } from './ItemsContext'
 
 function Cart({ match }) {
@@ -54,6 +55,10 @@ function Cart({ match }) {
                 )
                 })}
               <h2 className='grand-total'>Total: ${checkoutTotal}</h2>
+              <button>Buy More Coffee</button>
+              <Link to='./checkout'>
+                <button id='checkout'>Checkout</button>
+              </Link>
             </div>
         }
       </div>

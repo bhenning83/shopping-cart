@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
+import Checkout from './components/Checkout';
 import ItemDisplay from './components/ItemDisplay';
 import { Provider } from './components/ItemsContext';
 
@@ -18,6 +19,7 @@ function Routes() {
           <Route exact path='/shop' component={Shop} />
           <Route exact path='/cart' component={Cart} />
           <Route exact path='/shop/:id' component={ItemDisplay} />
+          <Route exact path='/checkout' component={Checkout} />
         </Switch>
       </Router>
     </Provider>
