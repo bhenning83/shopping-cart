@@ -30,27 +30,30 @@ function ItemDisplay({ match }) {
   }
 
   return (
-    <div className='product-field'>
-      <Link to={'/shop'}>
-        <FontAwesomeIcon icon={'times'} size='lg' />
-      </Link>
-      <h1>{item.title}</h1>
-      <div className='product-deets'>
-        <img src={bag} alt="coffee bag"/>
-        <div className='info-box'>
-          <h5>{item.desc}</h5>
-          <h5>{item.roast}</h5>
-          <h5>Origin: {item.origin}</h5>
-          <h5>{item.price}</h5>
-          <input type="number" 
-          placeholder='1'
-          min='1'
-          onChange={handleChange} />
-          <Link to={'/shop'}>
-            <button onClick={handleSubmit}>Add to Cart</button>
-          </Link>
+    <div>
+      <div className='product-field'>
+        <Link to={'/shop'}>
+          <FontAwesomeIcon icon={'times'} size='lg' />
+        </Link>
+        <h1>{item.title}</h1>
+        <div className='product-deets'>
+          <img src={bag} alt="coffee bag"/>
+          <div className='info-box'>
+            <h5>{item.desc}</h5>
+            <h5>{item.roast}</h5>
+            <h5>Origin: {item.origin}</h5>
+            <h5>{item.price}</h5>
+            <input type="number" 
+            placeholder='1'
+            min='1'
+            onChange={handleChange} />
+            <Link to={'/shop'}>
+              <button onClick={handleSubmit}>Add to Cart</button>
+            </Link>
+          </div>
         </div>
       </div>
+      <div className='product-display-back'></div>
     </div>
   )
 }

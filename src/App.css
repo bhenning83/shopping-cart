@@ -7,6 +7,7 @@ nav {
   min-height: 10vh;
   padding: 0 10px;
   justify-content: space-between;
+  z-index: 1000;
 }
 nav ul {
   display: flex;
@@ -49,7 +50,7 @@ nav ul a:hover {
   box-shadow: 0 0 10px 5px gray;
 }
 .home a {
-  margin: 2rem auto;
+  margin: 20px auto;
 }
 .home a button {
   outline: none;
@@ -64,13 +65,27 @@ nav ul a:hover {
   transform: translate(0, 3px);
   transition-duration: 0.5s;
 }
+.product-display-back {
+  background-image: url('./assets/images/shop-back.jpg');
+  height: 400px;
+  width: 600px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .product-field {
-  border: 2px solid black;
+  border: 2px solid rgb(255, 179, 37);
   border-radius: 10px;
   padding: 20px;
   width: 450px;
   margin: 0 auto;
   position: relative;
+  box-shadow: 5px 5px 20px gray;
+  z-index: 100;
 }
 .product-field > a {
   position: absolute;
@@ -81,7 +96,7 @@ nav ul a:hover {
 .product-field h1 {
   margin-bottom: 15px;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: underline rgb(255, 179, 37);
 }
 .product-deets {
   display: flex;
@@ -93,11 +108,15 @@ nav ul a:hover {
 .product-deets h5 {
   margin-bottom: 0.5rem;
 }
-.product-deets h5:last-of-type {
-  margin-top: 2rem;
-}
 input {
   width: 35px;
+  margin-right: 10px;
+}
+.product-deets button {
+  background:rgb(255, 179, 37);
+  border: none;
+  padding: 2px 5px;
+  box-shadow: 0 0 5px 2px gray;
 }
 .shop-container {
   width: 100vw;
@@ -112,6 +131,7 @@ input {
   background-size: contain;
   flex: 2 1 600px;
   min-width: 100px;
+  z-index: 1;
 }
 .shop-wrap {
   display: flex;
@@ -123,22 +143,25 @@ input {
 }
 .shop-display {
   margin: 25px;
+  max-width: 600px;
   flex: 1 1 500px;
+  overflow: visible;
 }
 .shop-display a {
   color: black;
   text-decoration: none;
   display: flex;
   align-items: center;
-  border: 1px solid rgb(255, 179, 37);
+  border: 2px solid rgb(255, 179, 37);
+  border-radius: 10px;
   padding: 15px;
+  box-shadow: 5px 5px 20px gray;
 
 }
 .shop-display a:visited {
   color: black;
 }
 .shop-display h2:first-of-type {
-  font-size: 2rem;
   background:rgb(255, 179, 37);
   padding: 5px 10px;
   margin-bottom: 10px;
@@ -158,19 +181,60 @@ input {
   justify-content: center;
   align-items: center;
   z-index: 999;
+  margin-left: 20px;
+}
+.cart-box > div {
+  border: 2px solid rgb(255, 179, 37);
+  border-radius: 10px;
+  padding: 20px 50px;
+  background: hsla(0, 0%, 100%, 80%);
+}
+.grand-total {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 50px;
+}
+.cart-item {
+  margin: 20px 0;
+}
+.cart-item > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.cart-item button {
+  background:rgb(255, 179, 37);
+  margin-top: 10px;
+  border: none;
+  padding: 5px;
+  box-shadow: 0 0 10px 3px gray;
+}
+.cart-item button:hover {
+  box-shadow: 0 0 5px 2px gray;
+  transform: translate(0, 1px);
+  transition-duration: 0.5s;
+}
+.beans-bl {
+  background-image: url('./assets/images/beans-bl.png');
+  width: 300px;
+  height: 350px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .back-beans {
   background-image: url('./assets/images/right-beans.jpg');
   position: absolute;
   bottom: 0;
   right: 0;
-  min-height: 600px;
+  min-height: 500px;
   min-width: 500px;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
 }
-/* .cart-item */
 @media only screen and (max-width: 600px) {
   .product-field {
     width: 90%;
@@ -183,11 +247,20 @@ input {
   .shop-wrap {
     justify-content: flex-start;
   }
+  .shop-display {
+    max-width: 230px;
+  }
   .shop-display h2:first-of-type {
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+  .shop-display h3 {
+    font-size: 0.8rem;
   }
   .shop-display img {
-    width: 100px;
+    width: 80px;
     height: auto;
+  }
+  .beans-bl {
+    display: none;
   }
 }
