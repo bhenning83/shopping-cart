@@ -20,11 +20,13 @@ nav ul {
   align-items: center;
 }
 nav ul a {
-  padding: 5px 7px;
+  padding: 5px 0;
   background: rgb(37, 171, 255);
   color: white;
   text-decoration: none;
   box-shadow: 0 0 10px 3px gray;
+  width: 58px;
+  text-align: center;
 }
 nav ul a:visited {
   color: white;
@@ -113,6 +115,8 @@ nav ul a:hover {
   position: relative;
   box-shadow: 5px 5px 20px gray;
   z-index: 100;
+  background: hsla(0, 0%, 100%, 80%);
+  box-shadow: 5px 5px 20px gray;
 }
 .product-field > a {
   position: absolute;
@@ -202,13 +206,12 @@ input {
 .cart-box {
   position: relative;
   left: 0;
-  width: 60%;
+  width: 100%;
   min-height: 70vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   z-index: 999;
-  margin-left: 20px;
 }
 .cart-box > div {
   border: 2px solid rgb(255, 179, 37);
@@ -223,7 +226,7 @@ input {
   border: none;
   padding: 5px 10px;
   box-shadow: 0 0 10px 3px gray;
-  margin: 10px 10px;
+  margin: 10px 0;
   color: white;
   font-weight: 700;
 }
@@ -286,6 +289,10 @@ input {
   .product-deets img {
     height: 50%;
   }
+  .cart-box .banner {
+    margin-left: -60px;
+    width: 175px;
+  }
 }
 @media only screen and (max-width: 732px) {
   .shop-wrap {
@@ -309,5 +316,8 @@ input {
   }
   .bio {
     width: 200px;
+  }
+  .cart-box > div {
+    width: 80%;
   }
 }

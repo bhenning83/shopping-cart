@@ -6,7 +6,7 @@ function Cart({ match }) {
   const [cartItems, setCartItems] = useContext(ItemsContext);
   const [checkoutTotal, setCheckoutTotal] = useState(0)
 
-  const getTotal = (item) => {return item.product.price * item.quantity}
+  const getTotal = (item) => {return (item.product.price * item.quantity).toFixed(2)}
 
   const getCheckoutTotal = () => {
     let totals = []
@@ -24,6 +24,7 @@ function Cart({ match }) {
   useEffect(() => {
     let total = getCheckoutTotal();
     console.log(total)
+    if (total) { total = total.toFixed(2) }
     setCheckoutTotal(total);
   })
 
