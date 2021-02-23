@@ -44,7 +44,7 @@ const items = [
     title: 'Peanut Butter Paradise',
     origin: 'Portland, Maine',
     roast: 'Dark Roast',
-    desc: "They said it couldn't be done. And it couldn't. But don't let that keep you from dropping a spoonful of Skippy in this one. The perfect pick me up before a big hike or a first date.",
+    desc: "They said it couldn't be done. And it couldn't. But don't let that keep you from dropping a spoonful of Skippy in this one. The perfect pick me up before a rendezvous into Acadia.",
     price: '11.99'
   },
 ];
