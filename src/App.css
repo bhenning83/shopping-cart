@@ -222,11 +222,10 @@ input {
 }
 .cart-box button {
   background: rgb(37, 171, 255);
-  margin-top: 10px;
   border: none;
   padding: 5px 10px;
   box-shadow: 0 0 10px 3px gray;
-  margin: 10px 0;
+  margin: 10px 7px;
   color: white;
   font-weight: 700;
 }
