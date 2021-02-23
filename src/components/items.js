@@ -47,6 +47,14 @@ const items = [
     desc: "They said it couldn't be done. And it couldn't. But don't let that keep you from dropping a spoonful of Skippy in this one. The perfect pick me up before a rendezvous into Acadia.",
     price: '11.99'
   },
+  {
+    key: '6',
+    title: 'Mocha Magnifique',
+    origin: 'Montréal, Canada',
+    roast: 'Dark Roast',
+    desc: "Le cheval noir canadien. Ce rôti ne fait pas toujours le travail, mais c'est amusant à boire et il a la meilleure manche du jeu. Bon Appetit.",
+    price: '11.24'
+  },
 ];
 
 export default items
