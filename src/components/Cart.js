@@ -55,7 +55,9 @@ function Cart({ match }) {
                 )
                 })}
               <h2 className='grand-total'>Total: ${checkoutTotal}</h2>
-              <button>Buy More Coffee</button>
+              <Link to='./shop'>
+                <button>Buy More Coffee</button>
+              </Link>
               <Link to='./checkout'>
                 <button id='checkout'>Checkout</button>
               </Link>
