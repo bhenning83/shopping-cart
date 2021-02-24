@@ -25,7 +25,7 @@ const items = [
   },
   {
     key: '3',
-    title: 'Nitro Nebrasketball',
+    title: 'The Cornhusker',
     origin: 'Lincoln, Nebraska',
     roast: 'Medium Roast',
     desc: "This nitro brew starts out lively, but always falls flat. It's bad, but it's reliable. And although it's hard to drink, the hope that it will taste better the next time will keep you coming back to it for years.",
