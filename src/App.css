@@ -208,9 +208,6 @@ input {
   margin-bottom: 10px;
   box-shadow: 0 0 10px 5px gray;
   font-weight: 600;
-  /* max-width: 116px; */
-  overflow-wrap: break-word;
-  hyphens: auto;
 }
 .cart-box {
   position: relative;
