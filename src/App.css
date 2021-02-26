@@ -98,6 +98,7 @@ nav ul a:hover {
   top: 250px;
   z-index: 10;
   box-shadow: 5px 5px 20px gray;
+  line-height: 1.4rem;
 }
 .product-display-back {
   background-image: url('./assets/images/shop-back.jpg');

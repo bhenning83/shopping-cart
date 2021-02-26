@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 function Nav() {
-  const [cartItems, setCartItems] = useContext(ItemsContext);
+  const [cartItems] = useContext(ItemsContext);
 
   library.add(faShoppingCart)
 
